@@ -1260,7 +1260,7 @@ console:
   service:
     ## @param console.service.type MinIO&reg; Console service type
     ##
-    type: ClusterIP
+    type: NodePort
     ## @param console.service.ports.http MinIO&reg; Console HTTP service port
     ##
     ports:
@@ -1269,7 +1269,7 @@ console:
     ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
     ##
     nodePorts:
-      http: ""
+      http: "30090"
     ## @param console.service.clusterIP Service Cluster IP
     ## e.g.:
     ## clusterIP: None
