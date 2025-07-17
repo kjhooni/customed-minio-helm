@@ -1269,7 +1269,7 @@ console:
     ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
     ##
     nodePorts:
-      http: "30090"
+      http: "30091"
     ## @param console.service.clusterIP Service Cluster IP
     ## e.g.:
     ## clusterIP: None
